@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback form</title>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <div class="form">
+          <form action="#" method="POST" class="form__body">
+            <h2 class="form__title">Написать нам</h2>
+            <ul class="form__list feedback-list">
+              <li class="feedback-list__item">
+                <label for="user-name" class="sr-only">Ваше имя</label>
+                <p class="feedback-list__description">Имя*:</p>
+                <input
+                  id="user-name"
+                  name="name"
+                  type="text"
+                  placeholder="Имя"
+                  class="feedback-list__input"
+                />
+                <div class="warning__logo">
+                  <p class="warning__description"></p>
+                </div>
+              </li>
+              <li class="feedback-list__item">
+                <label for="user-email" class="sr-only">Ваш e-mail</label>
+                <p class="feedback-list__description">E-mail*:</p>
+                <input
+                  id="user-email"
+                  name="email"
+                  type="text"
+                  placeholder="example@mail.com"
+                  class="feedback-list__input"
+                />
+                <div class="warning__logo">
+                  <p class="warning__description"></p>
+                </div>
+              </li>
+              <li class="feedback-list__item">
+                <label for="user-phone-number" class="sr-only"
+                  >Ваш телефон</label
+                >
+                <p class="feedback-list__description">Телефон*:</p>
+                <input
+                  id="user-phone-number"
+                  name="phoneNumber"
+                  type="tel"
+                  placeholder="+7(000)000-00-00"
+                  class="feedback-list__input"
+                />
+                <div class="warning__logo">
+                  <p class="warning__description"></p>
+                </div>
+              </li>
+              <li class="feedback-list__item">
+                <label for="user-date-of-birth" class="sr-only"
+                  >Ваша дата рождения</label
+                >
+                <p class="feedback-list__description">Дата рождения*:</p>
+                <input
+                  name="dateOfBirth"
+                  id="user-date-of-birth"
+                  type="date"
+                  placeholder="Дата рождения"
+                  class="feedback-list__input"
+                />
+                <div class="warning__logo">
+                  <p class="warning__description"></p>
+                </div>
+              </li>
+              <li class="feedback-list__item">
+                <label for="user-question" class="sr-only">Ваш вопрос</label>
+                <p class="feedback-list__description">Ваш вопрос*:</p>
+                <textarea
+                  name="question"
+                  id="user-question"
+                  class="feedback-list__input"
+                ></textarea>
+                <div class="warning__logo">
+                  <p class="warning__description"></p>
+                </div>
+              </li>
+            </ul>
+            <button type="submit" class="form__button">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
