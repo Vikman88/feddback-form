@@ -7,7 +7,7 @@
 ## Project setup
 
 ```
-git clone https://github.com/Vikman88/excel-clone.git
+git clone https://github.com/Vikman88/feddback-form.git
 npm ci
 ```
 
