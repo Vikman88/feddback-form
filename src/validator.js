@@ -6,16 +6,17 @@ yup.setLocale({
   },
   string: {
     max: 'Слишком длинная строка',
+    min: 'Слишком короткая строка',
     email: 'Неверный формат почты',
   },
 });
 
 const schema = yup.object().shape({
-  name: yup.string().trim().max(300).required(),
+  name: yup.string().trim().min(3).max(300).required(),
   email: yup.string().email().max(300).required(),
   phoneNumber: yup.string().max(300).required(),
   dateOfBirth: yup.string().required(),
-  question: yup.string().max(3000).required(),
+  question: yup.string().min(10).max(3000).required(),
 });
 
 export default (name, value) => {

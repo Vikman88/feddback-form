@@ -97,7 +97,7 @@ body {
   margin-bottom: 20px;
 }
 
-.feedback-list__item._error > .warning__logo {
+.feedback-list__item._error > .warning {
   opacity: 1;
   transition: all 0.5s ease 0s;
 }
@@ -148,11 +148,11 @@ body {
   margin-left: -9px;
 }
 
-.warning__logo:hover .warning__description {
+.warning:hover .warning__description {
   opacity: 1;
 }
 
-.warning__logo {
+.warning {
   position: absolute;
   background-image: url('../img/exclamation_triangle_icon_185045.svg');
   background-position: center;

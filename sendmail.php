@@ -12,7 +12,7 @@ $mail->setLanguage('ru', 'phpmailer/language/');
 $mail->IsHTML(true);
 
 $mail->setFrom('vikman88@gmail.com', 'Виктор Вилков');
-$mail->addAddress('vikman88@yandex.ru');
+$mail->addAddress('join@ecwid.com');
 $mail->Subject = 'Тестовое задание "Форма обратной связи"';
 
 $body = '<h1>Сообщение и контактные данные</h1>';

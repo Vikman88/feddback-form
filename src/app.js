@@ -12,7 +12,7 @@ const elements = {
 export default () => {
   const state = {
     feedbackForm: {
-      status: 'filling',
+      status: '',
       data: {
         name: '',
         email: '',
